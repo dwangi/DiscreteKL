@@ -49,7 +49,7 @@ discSurv_logit<-function(t, X, ind, tol = 1e-20, max_iter = 25){
   t=as.matrix(t)
   X=as.matrix(X)
   
-  return (NR_logit(t, X, ind, beta_t, beta_v, tol, max_iter))
+  return (DiscreteKL:::NR_logit(t, X, ind, beta_t, beta_v, tol, max_iter))
 }
 
 discSurvKL_logit<-function(t, X, ind, tol = 1e-20, max_iter = 25, beta_t_tilde, beta_v_tilde, eta){
