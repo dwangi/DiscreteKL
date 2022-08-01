@@ -3,7 +3,7 @@ library(discSurv) #used to simulate data
 library(tidyr)
 library(Rcpp)
 library(devtools)
-devtools::install_github("dwangi/DiscreteKL", force = TRUE)
+devtools::install_github("dwangi/DiscreteKL")
 
 #source files used in this simulation example
 #source('DiscreteKL_NR_logit.R')
